@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import './Register.css'
+import Footer from '../Footer/Footer';
 class Register extends Component {
     render() {
         return (
@@ -43,6 +44,7 @@ class Register extends Component {
                     </div>
                 </div>
                 {/* <Footer/> */}
+                <Footer/>
             </React.Fragment>
         );
     }

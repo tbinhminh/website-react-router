@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Login.css'
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 // import Footer from '../Footer/Footer';
 class Login extends Component {
     render() {
@@ -32,6 +33,7 @@ class Login extends Component {
                     </div>
                 </div>
                 {/* <Footer/> */}
+                <Footer/>
                 </React.Fragment>
         );
     }
