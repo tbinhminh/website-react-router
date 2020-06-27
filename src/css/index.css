@@ -1,0 +1,206 @@
+:root{
+  --header-height: 65px;
+  --header-background-color: #191919;
+  --header-background-inputSearch: #f1f1f1;
+  --header-textColor : #f1f1f1;
+  --header-textColor-notify:#1d1c1c;
+  --header-textColor-hover:#ce9b5c;
+  --header-background-qrcode: #f1f1f1;
+  --header-background--notify:#f7f7f7;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.43;
+  
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+a:hover{
+  opacity: 0.7;
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+ul, ol{
+  list-style-type: none;
+}
+i{
+  font-weight: 900;
+}
+input, select, textarea{
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+.responsive{
+  margin: 0 auto;
+  width: 1240px;
+  max-width: 100%;
+}
+.only-pc{
+  display: block  ;
+}
+.only-sp{
+  display: none ;
+}
+@media screen and (max-width: 1024px){
+  .only-pc{
+      display: none !important;
+  }
+  .only-sp{
+      display: block !important;
+  }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* flickity coursel - categories*/
+  .headline {
+      padding-left: 10px;
+  }
+  .categories .tabs__content .carousel-cell, .course_trending .carousel-course .carousel-cell{
+      width:33.3%;
+  }
+  .categories__tabs .tabs__sidebar{
+      padding-left: 10px;
+  }
+  .categories__tabs .tabs__content{
+      padding: 25px 20px 0 20px;
+  }
+  /* course_trending */
+  .course_trending{
+      padding: 25px 20px 0 20px;
+  }
+  /* study */
+  .study-wraper-col{
+      flex: 0 0 50%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+  }
+  /* footer */
+  .footer-wraper-col{
+      flex: 0 0 50%;
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  .footer .footer-aboutUs,.footer-contact{
+      text-align: left;
+  }
+  .footer-aboutUs .footer-aboutUs__tittle, .footer-contact .footer-contact__tittle{
+      text-align: center;
+  }
+  .footer-follow{
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+  }
+  .footer-follow_socialMedia{
+      display: flex;
+      margin:  0 auto;
+  }
+  .footer-follow .footer-follow__content a{
+      display: none;
+  }
+  .footer-follow .footer-follow__content .footer-follow__content--icon{
+      padding: 0 10px;
+      font-size: 24px;
+  }
+  
+}
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /* flickity coursel - categories */
+  .headline {
+      padding-left: 10px;
+  }
+  .categories__tabs .tabs__sidebar{
+      padding-left: 10px;
+  }
+  .categories__tabs .tabs__sidebar .tabs__sidebar-btn{
+      flex-wrap: wrap;
+  }
+  .categories .tabs__content .carousel-cell, .course_trending .carousel-course .carousel-cell{
+      width:50%;
+  }
+  .categories__tabs .tabs__sidebar .tabs__sidebar-btn li {
+      font-size: 16px;
+  }
+  .categories__tabs .tabs__content{
+      padding: 25px 20px 0 20px;
+  }
+  /* course_trending */
+  .course_trending{
+      padding: 25px 20px 0 20px;
+  }
+  /* study */
+  .study-wraper-col{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+  }
+  /* footer */
+  .footer-wraper-col{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  .footer-contact, .footer-follow {
+      padding-top: 30px;
+      text-align: center;
+  }
+  .footer-follow{
+      display: flex;
+      flex-direction: column;
+  }
+  .footer-follow_socialMedia{
+      display: flex;
+      margin:  0 auto;
+  }
+  .footer-follow .footer-follow__content a{
+      display: none;
+  }
+  .footer-follow .footer-follow__content .footer-follow__content--icon{
+      padding: 0 10px;
+  }
+  
+}
+
+@keyframes FadeIn_notifyHeader{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+@keyframes FadeIn_mobileMenu{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
