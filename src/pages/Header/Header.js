@@ -29,9 +29,9 @@ class Header extends Component {
                         <div className="menu-list">
                             <ul className="menu-list-item">
                                 <li className="menu-list-item__link"> <Link to="/">Trang chủ</Link></li>
-                                <li className="menu-list-item__link"> <a href="/a">Khóa học</a></li>
+                                <li className="menu-list-item__link"> <Link to="/carousel">Khóa học</Link></li>
                                 <li className="menu-list-item__link menu-list-item__link--hasNotify ">
-                                    <a href="/a"><i className="menu-list-item__icon far fa-bell" />Thông báo</a>
+                                <Link to="/thongbao"><i className="menu-list-item__icon far fa-bell" />Thông báo</Link>
                                     {/* notification */}
                                     <div className="menu-list-item__notify">
                                         <div className="notify-title">

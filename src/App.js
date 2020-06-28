@@ -8,8 +8,11 @@ import {
     Route,
   } from "react-router-dom";
 import Register from './pages/Register/Register';
+import Carousel from './pages/Carousel/Carousel';
+import Notify from './pages/Notify/Notify';
 class App extends Component {
   render() {
+      
     return (
         <Router>
           <Switch>
@@ -21,6 +24,12 @@ class App extends Component {
             </Route>
             <Route path="/register">
                 <Register/>
+            </Route>
+            <Route path="/carousel">
+                <Carousel/>
+            </Route>
+            <Route path="/thongbao">
+                <Notify/>
             </Route>
           </Switch>
       </Router>
